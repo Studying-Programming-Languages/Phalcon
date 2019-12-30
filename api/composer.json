@@ -1,0 +1,17 @@
+{
+    "name": "andrelsf/phalcon",
+    "description": "Learning PHP Phalcon",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andre Ferreira",
+            "email": "andre71luiz@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\Phalcon\\": "src/"
+        }
+    }
+}
