@@ -1,0 +1,3 @@
+.docker/mysql/data/
+api/vendor/
+.docker/mysql/.env
