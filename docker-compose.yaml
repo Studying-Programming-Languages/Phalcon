@@ -12,6 +12,8 @@ networks:
 services:
   api-php-phalcon:
     build: ./.docker/apache
+    env_file:
+      - ./.docker/apache/.env
     volumes:
       - ./api:/usr/src/app
     ports:
@@ -25,7 +27,7 @@ services:
         ipv4_address: "172.112.0.2"
 
   db-php-phalcon:
-    image: mysql:5.7
+    build: ./.docker/mysql/docker/
     env_file:
       - ./.docker/mysql/.env
     volumes:
