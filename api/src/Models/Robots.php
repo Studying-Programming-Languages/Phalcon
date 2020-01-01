@@ -2,11 +2,11 @@
 
 namespace App\Phalcon\Models;
 
-use \Phalcon\Mvc\Model;
-use \Phalcon\Message\Message;
-use \Phalcon\Validation;
-use \Phalcon\Validation\Validator\Uniqueness;
-use \Phalcon\Validation\Validator\InclusionIn;
+use Phalcon\Mvc\Model;
+use Phalcon\Messages\Message;
+use Phalcon\Validation;
+use Phalcon\Validation\Validator\Uniqueness;
+use Phalcon\Validation\Validator\InclusionIn;
 
 class Robots extends Model
 {
@@ -42,8 +42,6 @@ class Robots extends Model
             );
         }
 
-        if ($this->validationHasFailed() === true) {
-            return false;
-        }
+        return $this->validate($validator);
     }
 }

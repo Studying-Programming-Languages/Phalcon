@@ -3,3 +3,4 @@ api/vendor/
 .docker/mysql/.env
 api/src/Config/mysql.php
 .docker/apache/.env
+.idea/
