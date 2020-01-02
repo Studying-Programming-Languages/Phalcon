@@ -4,3 +4,4 @@ api/vendor/
 api/src/Config/mysql.php
 .docker/apache/.env
 .idea/
+api/public/index.php.old
